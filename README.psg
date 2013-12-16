@@ -24,4 +24,6 @@ acAGTCTCtctctttcacac"
 alns = pairwise2.align.globalds(probe0, probe1, matrix, gap_open, gap_extend)
 
 top_aln = alns[0]
-aln_human, a
+aln_probe0, aln_probe1, score, begin, end = top_aln
+
+print aln_probe0+'\n'+aln_probe1
