@@ -1,5 +1,5 @@
-probe_alignment_script
-======================
+#probe_alignment_script
+#======================
 #adapted from http://doeidoei.wordpress.com/2011/10/26/easy-sequence-alignment-with-biopython/
 
 #!/usr/bin/env python
