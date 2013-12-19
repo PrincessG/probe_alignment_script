@@ -1,4 +1,3 @@
-
 ###############adapted from http://doeidoei.wordpress.com/2011/10/26/easy-sequence-alignment-with-biopython/
 
 #!/usr/bin/env python
@@ -26,3 +25,7 @@ top_aln = alns[0]
 aln_probe0, aln_probe1, score, begin, end = top_aln
 
 print aln_probe0+'\n'+aln_probe1
+
+
+
+if_name_=='_main_':
