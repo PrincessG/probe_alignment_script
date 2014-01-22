@@ -16,4 +16,5 @@ As of 1.21.2013 I have done everything above so all you have to do not is pull d
  
 >git fetch upstream
 
-
+Then if that goes smoothly...
+>git merge upstream/master
