@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import Biopython
 
 from Bio import SeqIO
 for seq_reocrd in SeqIO.parse("UCE_PROBES.fasta", "genbank"):
