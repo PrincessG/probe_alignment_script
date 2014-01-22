@@ -19,4 +19,4 @@ If you haven't done so already, assign the original repository to a remote calle
 
 As of 1.21.2013 I have done everything above so all you have to do not is pull down the most recent version of the script. This will pull in changes not present in your local repository, without modifying your files
  
-git merge upstream
+>git merge upstream
