@@ -1,13 +1,11 @@
-
 #!/usr/bin/env python
 # encoding: utf-8
 
 import Biopython
 
 from Bio import SeqIO
-for seq_reocrd in SeqIO.parse("UCE_Probes.fasta", "genbank"):
+for seq_reocrd in SeqIO.parse("UCE_PROBES.fasta", "genbank"):
   print(seq_record.id)
   print(repr(seq_record.seq))
   print(len(seq_record))
 
-if_name_=='_main_':
