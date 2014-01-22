@@ -8,7 +8,7 @@ for seq_reocrd in SeqIO.parse("UCE_PROBES.fasta", "genbank"):
   print(repr(seq_record.seq))
   print(len(seq_record))
 
-if_name_=='_main_':
+if_name_=='_main_'
 print(seq_record.id)
   print(repr(seq_record.seq))
   print(len(seq_record))
