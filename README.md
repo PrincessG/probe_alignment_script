@@ -12,7 +12,7 @@ To set things up on a directory on your computer from within terminal navigate t
 
 >git remote add upstream https://github.com/PrincessG/probe_alignment_script.git
 
-As of 1.21.2013 I have done everything above so all you have to do not is pull down the most recent version of the script. This will pull in changes not present in your local repository, without modifying your files
+As of 1.21.2013 I have done everything above so all you have to do not is pull down the most recent version of the script. This will pull in changes not present in your local repository, without modifying your files. Don't forget to navigate to directory on computer where your respository lives.
  
 >git fetch upstream
 
