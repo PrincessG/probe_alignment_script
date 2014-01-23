@@ -25,4 +25,9 @@ To run the script just type
 Additionaly I added another script that parses the marker data into separate entries. You can run that script by 
 >python probe_parse.psg UCE_PROBES.fasta
 
-The next step is add a for loop to the above script that will actually spit out each entry into it's own text file.
+The next step is add a for loop to the above script that will actually spit out each entry into it's own text file. The easiest way to do this is to add the following to the probe_parse.psg script:
+
+>OutFileName = "LocusSpecificProbeSpecificName"
+>OutFile = open( OutFileName,'w')
+
+Ideally I want to the file names to get passed from the original first part of fasta listings. ###_oryLat2_chr##_######_#######|probe_0 OR ###_oryLat2_chr##_######_#######|probe_1. 
