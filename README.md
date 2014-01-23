@@ -21,3 +21,8 @@ Then if that goes smoothly...
 
 To run the script just type
 > python Code.psg 
+
+Additionaly I added another script that parses the marker data into separate entries. You can run that script by 
+>python probe_parse.psg UCE_PROBES.fasta
+
+The next step is add a for loop to the above script that will actually spit out each entry into it's own text file.
