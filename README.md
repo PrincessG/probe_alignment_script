@@ -20,4 +20,4 @@ Then if that goes smoothly...
 >git merge upstream/master
 
 To run the script just type
-> python Code.psg LocationOfUCEProbeFile
+> python Code.psg 
