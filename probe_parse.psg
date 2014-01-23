@@ -11,7 +11,7 @@ Usage: seqread.py sequence.fta from Practical Computing for Biologists by Haddoc
 import sys
 
 if len(sys.argv)<2:
-print Usage
+  print Usage
 
 else:
   InfileName= open(InfileName,'r')
