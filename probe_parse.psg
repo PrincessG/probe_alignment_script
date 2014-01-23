@@ -1,0 +1,14 @@
+#! /usr/bin/en python
+
+Usage="""
+seqread.py-version 1
+Reads in a file in fasta format into a list and dicitionary. The resulting list is formatte
+[[name1','sequence1sequence1sequence1'],
+[name2, 'sequence2sequene2sequence2']]
+
+Usage: seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
+
+import sys
+
+if len(sys.argv)<2:
+print Usage
