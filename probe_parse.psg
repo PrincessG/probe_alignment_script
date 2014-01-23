@@ -1,6 +1,6 @@
-#! /usr/bin/en python
+#! /usr/bin/env python
 
-Usage="""
+Usage ="""
 seqread.py-version 1
 Reads in a file in fasta format into a list and dicitionary. The resulting list is formatte
 [[name1','sequence1sequence1sequence1'],
