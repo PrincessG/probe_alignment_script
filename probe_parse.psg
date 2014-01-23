@@ -26,12 +26,12 @@ else:
     if Line[0]=='>': #new record name
       Name=Line[1:] #Chop off the > at the front
       
-      #Make a two-item list with the name as the first element, and an empty string as the second.
+      #Make a two-item list with the marker name as the first element, and an empty string as the second.
       
       Sequences.append([Name,''])
       RecordNum += 1 #Now we have a record
       
-      #Use the Name for the dictionary key
+      #Use the marker name for the dictionary key
       SeqKey = Name
       
       #Create a blank dictionary entry to append later
@@ -44,5 +44,8 @@ else:
     # Insert your processing and file output commands here
       for Seq in Sequences:
         print Seq[0],":", Seq[1]
-      
+        OutFileName = " Seq[0] "
+        OutFile = open( OutFileName,'w')
+        print Seq[0],":", Seq[1]
+        OutFile.close()
     print SeqDict.keys()
