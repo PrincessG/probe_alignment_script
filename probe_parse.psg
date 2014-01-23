@@ -1,12 +1,12 @@
 #! /usr/bin/env python
 
 Usage ="""
-seqread.py-version 1
-Reads in a file in fasta format into a list and dicitionary. The resulting list is formatte
+Welcome to another script! It's called probe_parse-version 1
+It reads a file in fasta format into a list and dicitionary. The resulting list is formatted as follows
 [[name1','sequence1sequence1sequence1'],
 [name2, 'sequence2sequene2sequence2']]
 
-Usage: seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
+Props to: seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
 
 import sys
 
