@@ -4,7 +4,5 @@
 import sys
 from Bio import SeqIO
 for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
-  sys.stdout.write('seq_record.id')
-  sys.stdout.write(repr(seq_record.seq))
-  sys.stdout.write(len(seq_record))
-
+  print(seq_record.id)
+  
