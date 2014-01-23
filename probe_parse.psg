@@ -6,7 +6,7 @@ It reads a file in fasta format into a list and dicitionary. The resulting list 
 [[name1','sequence1sequence1sequence1'],
 [name2, 'sequence2sequene2sequence2']]
 
-Props to: seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
+Courtesy of : seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
 
 import sys
 
@@ -20,3 +20,13 @@ else:
   
   Seq=[ ]
   SeqDict={ }
+  
+  for Line in Infile:
+    Line = Line.strip()
+    if Line[0]=='>':
+      Name=Line[1:] #Chop off the > at the front
+      
+      #Make a two-item list with the name as the first element, and an empty string as the second
+      
+      Sequences.append([Name,''])
+      RecordNum +=1 #Now we have a record
