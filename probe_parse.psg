@@ -21,7 +21,7 @@ else:
   Seq=[ ]
   SeqDict={ }
   
-  for Line in Infile:
+  for Line in InfileName:
     Line = Line.strip()
     if Line[0]=='>':
       Name=Line[1:] #Chop off the > at the front
