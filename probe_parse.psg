@@ -43,6 +43,6 @@ else:
     # When done with the loop, print the sequences:
     # Insert your processing and file output commands here
       for Seq in Sequences:
-        print Seq[0:]
+        print Seq[0],":", Seq[1]
         
     #print SeqDict.keys()
