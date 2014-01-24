@@ -9,7 +9,7 @@ It reads a file in fasta format into a list and dicitionary. The resulting list 
 Courtesy of : seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
 
 import sys
-
+import String
 if len(sys.argv)<2:
   print Usage
 
