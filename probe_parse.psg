@@ -48,4 +48,4 @@ else:
         OutFile = open( OutFileName,'w')
         print Seq[0],":", Seq[1]
         OutFile.close()
-    #print SeqDict.keys()
+    print SeqDict.keys()
