@@ -9,7 +9,7 @@ It reads a file in fasta format into a list and dicitionary. The resulting list 
 Courtesy of : seqread.py sequence.fta from Practical Computing for Biologists by Haddock & Dunn 2011""" 
 
 import sys
-import String
+
 if len(sys.argv)<2:
   print Usage
 
@@ -22,7 +22,7 @@ else:
   SeqDict={ }
   
   for Line in InfileName:
-    Line = string.rstrip()
+    Line = string.strip('\r')
     if Line[0]=='>': #new record name
       Name=Line[1:] #Chop off the > at the front
       
