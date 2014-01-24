@@ -22,7 +22,7 @@ else:
   SeqDict={ }
   
   for Line in InfileName:
-    Line = string.strip('\r')
+    Line = Line.strip('/r')
     if Line[0]=='>': #new record name
       Name=Line[1:] #Chop off the > at the front
       
