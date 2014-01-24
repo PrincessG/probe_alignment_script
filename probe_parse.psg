@@ -28,7 +28,7 @@ else:
       
       #Make a two-item list with the marker name as the first element, and an empty string as the second.
       
-      Sequences.append([Name,''])
+      #Sequences.append([Name,''])
       RecordNum += 1 #Now we have a record
       
       #Use the marker name for the dictionary key
