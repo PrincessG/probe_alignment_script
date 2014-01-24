@@ -44,8 +44,5 @@ else:
     # Insert your processing and file output commands here
       for Seq in Sequences:
         print Seq[0],":", Seq[1]
-        OutFileName = " Seq[0] "
-        OutFile = open( OutFileName,'w')
-        print Seq[0],":", Seq[1]
-        OutFile.close()
+        
     print SeqDict.keys()
