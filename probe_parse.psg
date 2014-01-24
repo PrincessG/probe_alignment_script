@@ -28,7 +28,7 @@ else:
       
       #Make a two-item list with the marker name as the first element, and an empty string as the second.
       
-      Sequences.append([Name,'everythingaftercolonforthatentry'])
+      Sequences.append([Name,''])
       RecordNum += 1 #Now we have a record
       
       #Use the marker name for the dictionary key
@@ -42,7 +42,7 @@ else:
         SeqDict[SeqKey] += Line
     # When done with the loop, print the sequences:
     # Insert your processing and file output commands here
-      for Seq in Sequences:
-        print Seq[0],":", Seq[1]
+  for Seq in Sequences:
+  print Seq[0],":", Seq[1]
         
     #print SeqDict.keys()
