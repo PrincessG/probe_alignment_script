@@ -23,6 +23,8 @@ else:
   SeqDict={ }
   
   for Line in InfileName:
+    OutFileName= SeqKey
+    OutFile=open(OutFileName, 'w')
     Line = Line.strip() #remove line endings and character returns
     if Line[0]=='>': #if the first line has a greater than sign (denoting the start of new sequence) do what's on the next line
       Name=Line[1:] #Set the placholder "Name" as the sequence. chop off the > at the front
@@ -41,12 +43,11 @@ else:
       if RecordNum > -1:
         Sequences[RecordNum][1] += Line
         SeqDict[SeqKey] += Line
+        OutFile.write(SeqDict[SeqKey])
+        OutFile.close()
     # When done with the loop, print the sequences:
     # Insert your processing and file output commands here
   for Seq in Sequences:
     print Seq[0],":", Seq[1] #print the 1st & 2nd Elements of the list
-    OutFileName= SeqKey
-    OutFile=open(OutFileName, 'w')
-    OutFile.write("Seq[0] Seq[0]")
-    OutFile.close()
+   
     #print SeqDict.keys()
