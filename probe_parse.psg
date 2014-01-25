@@ -35,7 +35,7 @@ else:
       #Use the marker name for the dictionary key
       SeqKey = Name
       OutFileName= SeqKey
-      OutFile=open(OutFileName, 'w')
+      OutFile=open(OutFileName, 'a')
       
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
