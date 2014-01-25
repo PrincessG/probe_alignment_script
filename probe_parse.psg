@@ -52,4 +52,4 @@ else:
     print Seq[0],":", Seq[1] #print the 1st & 2nd Elements of the list
     
     OutFile.close()
-    #print SeqDict.keys()
+    print SeqDict.keys()
