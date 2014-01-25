@@ -26,7 +26,7 @@ else:
     
     Line = Line.strip() #remove line endings and character returns
     if Line[0]=='>': #if the first line has a greater than sign (denoting the start of new sequence) do what's on the next line
-      Name=Line[1:] #Set the placholder "Name" as the sequence. chop off the > at the front
+      Name=Line[0:] #Set the placholder "Name" as the sequence. chop off the > at the front
       
       #Make a two-item list with the marker name as the first element, and an empty string as the second.
       
@@ -36,7 +36,7 @@ else:
       #Use the marker name for the dictionary key
       SeqKey = Name
       OutFileName= SeqKey
-      OutFile=open(OutFileName, 'a')
+      OutFile=open(OutFileName, 'w')
       
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
