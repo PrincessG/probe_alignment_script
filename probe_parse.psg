@@ -37,14 +37,16 @@ else:
       SeqKey = Name
       OutFileName= SeqKey
       OutFile=open(OutFileName, 'w')
+      OutFile.write(SeqDict[SeqKey])
+      OutFile.close()
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
     else:
       if RecordNum > -1:
         Sequences[RecordNum][1] += Line
         SeqDict[SeqKey] += Line
-      OutFile.write(SeqDict[SeqKey])
-      OutFile.close()
+      
+      
     # When done with the loop, print the sequences:
     # Insert your processing and file output commands here
   for Seq in Sequences:
