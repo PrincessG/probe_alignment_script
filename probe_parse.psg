@@ -47,6 +47,6 @@ else:
     print Seq[0],":", Seq[1]
     OutFileName= SeqKey
     OutFile=open(OutFileName, 'w')
-    OutFile.write(Seq[0],":",Seq[1]\n)
+    OutFile.write(Seq[0],":",Seq[1])
     OutFile.close()
     #print SeqDict.keys()
