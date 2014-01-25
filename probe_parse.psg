@@ -39,7 +39,7 @@ else:
 
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
-      OutFile.write(SeqDict.get(SeqKey)) # Write the value of the dictionary to the OutFile. 
+      OutFile.write(SeqDict.items) # Write the value of the dictionary to the OutFile. 
 
     else:
       if RecordNum > -1:
@@ -52,4 +52,4 @@ else:
     print Seq[0],":", Seq[1] #print the 1st & 2nd Elements of the list
     
     OutFile.close()
-    print SeqDict.keys()
+    #print SeqDict.keys()
