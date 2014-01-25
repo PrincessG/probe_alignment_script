@@ -23,9 +23,9 @@ else:
   SeqDict={ }
   
   for Line in InfileName:
-    Line = Line.strip()
-    if Line[0]=='>': #new record name
-      Name=Line[1:] #Chop off the > at the front
+    Line = Line.strip() #remove line endings and character returns
+    if Line[0]=='>': #if the first line has a greater than sign (denoting the start of new sequence) do what's on the next line
+      Name=Line[1:] #Set the placholder "Name" as the sequence. chop off the > at the front
       
       #Make a two-item list with the marker name as the first element, and an empty string as the second.
       
@@ -44,9 +44,9 @@ else:
     # When done with the loop, print the sequences:
     # Insert your processing and file output commands here
   for Seq in Sequences:
-    print Seq[0],":", Seq[1]
+    print Seq[0],":", Seq[1] #print the 1st & 2nd Elements of the list
     OutFileName= SeqKey
     OutFile=open(OutFileName, 'w')
-    OutFile.write(SeqDict[SeqKey])
+    OutFile.write("Seq[0] Seq[0]")
     OutFile.close()
     #print SeqDict.keys()
