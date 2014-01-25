@@ -12,12 +12,12 @@ import sys
 
 if len(sys.argv)<2:
   print Usage
+  Line = Line.rstrip() #remove line endings and character returns
 
 else:
   InfileName= sys.argv[1]
   InfileName= open(InfileName,'r')
   RecordNum= -1
-  Line = Line.rstrip() #remove line endings and character returns
 
 #Set up a blank list and blank dictionary  
   Sequences=[ ]
