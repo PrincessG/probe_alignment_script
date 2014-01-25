@@ -24,7 +24,7 @@ else:
   
   for Line in InfileName:
     
-    Line = Line.strip() #remove line endings and character returns
+    Line = str.strip() #remove line endings and character returns
     if Line[0]=='>': #if the first line has a greater than sign (denoting the start of new sequence) do what's on the next line
       Name=Line[1:] #Set the placholder "Name" as the sequence. chop off the > at the front
       
@@ -43,7 +43,7 @@ else:
     else:
       if RecordNum > -1:
         Sequences[RecordNum][1] += Line
-        SeqDict[SeqKey] += Line[1:]
+        SeqDict[SeqKey] += Line
       OutFile.write(SeqDict[SeqKey])
       
       
