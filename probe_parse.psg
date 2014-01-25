@@ -45,5 +45,7 @@ else:
     # Insert your processing and file output commands here
   for Seq in Sequences:
     print Seq[0],":", Seq[1]
-    
+    OutFileName= SeqKey
+      OutFile=open(OutFileName, 'w')
+      OutFile.write(Seq[0],:,Seq[1]\n)
     #print SeqDict.keys()
