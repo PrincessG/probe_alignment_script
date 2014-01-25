@@ -36,7 +36,7 @@ else:
       SeqKey = Name
       OutFileName= SeqKey
       OutFile=open(OutFileName, 'a')
-      OutFile.write(Seq)
+      OutFile.write(dict.values())
 
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
