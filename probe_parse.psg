@@ -34,8 +34,10 @@ else:
       
       #Use the marker name for the dictionary key
       SeqKey = Name
-      
-      
+      OutFileName= SeqKey
+      OutFile=open(OutFileName, 'a')
+      OutFile.write(SeqKey)
+
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
     else:
@@ -48,8 +50,6 @@ else:
     # Insert your processing and file output commands here
   for Seq in Sequences:
     print Seq[0],":", Seq[1] #print the 1st & 2nd Elements of the list
-    OutFileName= SeqKey
-    OutFile=open(OutFileName, 'a')
-    OutFile.write(SeqDict[SeqKey])
+    
     OutFile.close()
     #print SeqDict.keys()
