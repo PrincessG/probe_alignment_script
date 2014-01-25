@@ -44,7 +44,7 @@ else:
       if RecordNum > -1:
         Sequences[RecordNum][1] += Line
         SeqDict[SeqKey] += Line
-      OutFile.write(SeqDict[SeqKey])
+      OutFile.write(OutFileName,SeqKey)
       
       
     # When done with the loop, print the sequences:
