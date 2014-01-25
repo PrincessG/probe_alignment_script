@@ -39,7 +39,7 @@ else:
 
       #Create a blank dictionary entry to append later
       SeqDict[SeqKey] = ''
-      OutFile.write(SeqDict{SeqKey}) # Write the value of the dictionary to the OutFile. 
+      OutFile.write(SeqDict[SeqKey]) # Write the value of the dictionary to the OutFile. 
 
     else:
       if RecordNum > -1:
