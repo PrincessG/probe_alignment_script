@@ -24,7 +24,7 @@ else:
   
   for Line in InfileName:
     
-    Line = str.strip() #remove line endings and character returns
+    Line = .rstrip() #remove line endings and character returns
     if Line[0]=='>': #if the first line has a greater than sign (denoting the start of new sequence) do what's on the next line
       Name=Line[1:] #Set the placholder "Name" as the sequence. chop off the > at the front
       
