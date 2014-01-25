@@ -12,19 +12,20 @@ import sys
 
 if len(sys.argv)<2:
   print Usage
+  Line = Line.rstrip() #remove line endings and character returns
 
 else:
   InfileName= sys.argv[1]
   InfileName= open(InfileName,'r')
   RecordNum= -1
-  
+  Line = Line.rstrip() #remove line endings and character returns
+
 #Set up a blank list and blank dictionary  
   Sequences=[ ]
   SeqDict={ }
   
   for Line in InfileName:
     
-    Line = Line.rstrip() #remove line endings and character returns
     if Line[0]=='>': #if the first line has a greater than sign (denoting the start of new sequence) do what's on the next line
       Name=Line[1:] #Set the placholder "Name" as the sequence. chop off the > at the front
       
