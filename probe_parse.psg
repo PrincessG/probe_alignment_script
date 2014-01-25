@@ -19,7 +19,7 @@ else:
   RecordNum= -1
 
 #Set up a blank list and blank dictionary  
-  #Sequences=[ ]
+  Sequences=[ ]
   SeqDict={ }
   
   for Line in InfileName:
@@ -29,7 +29,7 @@ else:
       
       #Make a two-item list with the marker name as the first element, and an empty string as the second.
       
-      #Sequences.append([Name,''])
+      Sequences.append([Name,''])
       RecordNum += 1 #Now we have a record
       
       #Use the marker name for the dictionary key
@@ -41,7 +41,7 @@ else:
       SeqDict[SeqKey] = ''
     else:
       if RecordNum > -1:
-        #Sequences[RecordNum][1] += Line
+        Sequences[RecordNum][1] += Line
         SeqDict[SeqKey] += Line
       OutFile.write(SeqDict[SeqKey])
       
