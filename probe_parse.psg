@@ -49,6 +49,6 @@ else:
     # When done with the loop, print the sequences:
     # Insert your processing and file output commands here
   for Seq in Sequences:
-    print Seq[0],":", Seq[1] > test.txt#print the 1st & 2nd Elements of the list
+    print Seq[0],":", Seq[1] > OutFileName #print the 1st & 2nd Elements of the list
     OutFile.close()
     #print SeqDict.keys()
