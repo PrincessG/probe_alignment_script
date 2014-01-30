@@ -1,5 +1,5 @@
 from Bio import AlignIO
-alignments = AlignIO.parse ('resampled.phy, "phylip")
+alignments = AlignIO.read ('918_oryLat2.nexus, "nexus")
 for alignment in alignments:
   print(alignment)
-  print("")
+  
