@@ -3,6 +3,17 @@
 
 import sys
 import re
+
+
+Usage ="""
+Welcome to another script! It's called Code.psg
+It reads in a fasta file and spits out a text file for each fasta entry. 
+
+Many thanks to the coders at Biopython for their module. """ 
+
+if len(sys.argv)<2:
+  print Usage
+
 from Bio import SeqIO
 
 WriteOutFile = True
