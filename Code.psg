@@ -5,14 +5,13 @@ import sys
 import re
 from Bio import SeqIO
 
-
+WriteOutFile = True
 if WriteOutFile:
   OutFile = open(OutFileName, 'w')
   
 ############### Beginning of the for loop
 for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
   OutFileName = seq_record.id
-  WriteOutFile = True
   print(seq_record.id)
   print(repr(seq_record.seq))  
   print(len(seq_record))
