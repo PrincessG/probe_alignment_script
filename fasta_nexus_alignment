@@ -1,5 +1,0 @@
-from Bio import AlignIO
-alignments = AlignIO.read ('918_oryLat2.nex, "nexus")
-for alignment in alignments:
-  print(alignment)
-  
