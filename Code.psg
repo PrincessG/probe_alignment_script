@@ -6,17 +6,17 @@ import re
 from Bio import SeqIO
 
 WriteOutFile = True
-if WriteOutFile:
-  OutFile = open(OutFileName, 'w')
   
 ############### Beginning of the for loop
 for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
   OutFileName = seq_record.id
+  OutFile = open(OutFileName, 'w')
   print(seq_record.id)
   print(repr(seq_record.seq))  
   print(len(seq_record))
-  OutFile.write(seq_record.id)
-  OutFile.write(repr(seq_record.seq))  
-  OutFile.write(len(seq_record))
+  if WriteOutFile:
+    OutFile.write(seq_record.id)
+    OutFile.write(repr(seq_record.seq))  
+    OutFile.write(len(seq_record))
 if WriteOutFile:
   OutFile.close()
