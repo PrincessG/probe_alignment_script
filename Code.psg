@@ -6,5 +6,5 @@ from Bio import SeqIO
 for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
   sys.stderr.write(seq_record.id)
   sys.stderr.write(repr(seq_record.seq))  
-  sys.stderr.write(len(seq_record))
+  sys.stderr.write(%len(seq_record))
   
