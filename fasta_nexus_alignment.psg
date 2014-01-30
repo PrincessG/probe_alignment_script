@@ -16,7 +16,7 @@ if len(sys.argv)<2:
 
 
 from Bio import AlignIO
-alignments = AlignIO.read ('918_oryLat2.nex, "nexus")
+alignments = AlignIO.parse ('918_oryLat2.nex, "nexus")
 for alignment in alignments:
   print(alignment)
   
