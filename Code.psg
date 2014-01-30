@@ -14,7 +14,7 @@ for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
   print(seq_record.id)
   print(repr(seq_record.seq))  
   print(len(seq_record))
-  OutputLength= len(seq_record))
+  OutputLength= len(seq_record)
   if WriteOutFile:
     OutFile.write(seq_record.id)
     OutFile.write(repr(seq_record.seq))  
