@@ -20,3 +20,4 @@ alignments = AlignIO.read ("918_oryLat2.nex", "nexus")
 for alignment in alignments:
   print(alignment)
   
+#### Next you'll want to read in one of the probe sequences and store that along with the 8 taxa alignment. 
