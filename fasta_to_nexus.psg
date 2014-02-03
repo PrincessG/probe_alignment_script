@@ -1,8 +1,8 @@
 ##First convert the probe fasta files to a nexus files. 
 import sys
 for MyArg in sys.argv:
-print MyArg
+  print MyArg
 from Bio import SeqIO
-records = SeqIO.parse("918_oryLat2_chr1_16673522_16673701|probe_0|1,121.fasta", "fasta")
-count = SeqIO.write(records,"918_probe0.nexus", "nexus")
-  print("Converted %i records" % count)
+  records = SeqIO.parse("918_oryLat2_chr1_16673522_16673701|probe_0|1,121.fasta", "fasta")
+  count = SeqIO.write(records,"918_probe0.nexus", "nexus")
+    print("Converted %i records" % count)
