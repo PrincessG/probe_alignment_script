@@ -6,5 +6,5 @@ for MyArg in sys.argv:
   print MyArg
 
 
-count = SeqIO.convert("918_oryLat2_chr1_16673522_16673701|probe_0|1,121", "fasta", "918_probe0.nexus", "nexus")
+count = SeqIO.convert("918_oryLat2_chr1_16673522_16673701|probe_0|1,121", "fasta", "918_probe0.nexus", "nexus", alphabet=IUPAC)
 print("Converted %i records" % count)
