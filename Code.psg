@@ -6,7 +6,7 @@ import re
 
 
 Usage ="""
-Welcome to another script! It's called Code.psg
+Welcome to Code.psg !
 It reads in a fasta file and spits out a text file for each fasta entry. 
 
 Many thanks to the coders at Biopython for their module. """ 
@@ -28,8 +28,7 @@ for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
   OutputSequence= '%s' % (seq_record.seq)
   OutputLength= '%d' % (len(seq_record))
   if WriteOutFile:
-    OutFile.write(seq_record.id + '\n')
+    OutFile.write('<'+ seq_record.id + '\n')
     OutFile.write(OutputSequence + '\n')  
-    OutFile.write(OutputLength + '\n')
 if WriteOutFile:
   OutFile.close()
