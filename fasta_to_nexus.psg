@@ -5,6 +5,6 @@ from Bio import SeqIO
 for MyArg in sys.argv:
   print MyArg
 
-records = SeqIO.parse("918_oryLat2_chr1_16673522_16673701|probe_0|1,121.fasta", "fasta")
+records = SeqIO.parse("918_oryLat2_chr1_16673522_16673701|probe_0|1,121", "fasta")
 count = SeqIO.write(records,"918_probe0.nexus", "nexus")
 print("Converted %i records" % count)
