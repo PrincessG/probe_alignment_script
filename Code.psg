@@ -28,7 +28,7 @@ for seq_record in SeqIO.parse("UCE_PROBES.fasta", "fasta"):
   OutputSequence= '%s' % (seq_record.seq)
   OutputLength= '%d' % (len(seq_record))
   if WriteOutFile:
-     OutFile.write('>'+ seq_record.id + '\n')
+    OutFile.write('>'+ seq_record.id + '\n')
     OutFile.write(OutputSequence + '\n')  
 if WriteOutFile:
   OutFile.close()
