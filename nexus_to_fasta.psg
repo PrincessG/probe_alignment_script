@@ -17,7 +17,7 @@ for MyArg in sys.argv:
 #count = SeqIO.convert("918_probe0.nexus", "nexus", "918_probe0.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
 #print("Converted %i records" % count)
 
-##### OR to automate across all nexus alignment files...
+##### OR to automate across all nexus alignment files...type python nexus_to_fasta.psg foldernametoprocess
 
 
 
@@ -29,9 +29,12 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 
-count = SeqIO.convert("/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex", "nexus", "*_oryLat2.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
-print("Converted %i records" % count)
+def process(filename)
+  count = SeqIO.convert("filename", "nexus", "filename.PARTIAL.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+  print("Converted %i records" % count)
 
+for f in os.listdir(folder):
+  process(f)
 
 
 
