@@ -1,5 +1,9 @@
 # To convert nexus files to fasta files for clusta omega input.
+
 import sys
+import re
+import glob
+
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
 for MyArg in sys.argv:
@@ -16,9 +20,6 @@ for MyArg in sys.argv:
 ##### OR to automate across all nexus alignment files...
 
 
-import sys
-import re
-import glob
 
 Usage ="""
 Let's automate this b#$#! 
@@ -31,7 +32,7 @@ if len(sys.argv)<2:
 from Bio import SeqIO
 
 WriteOutFile = True
-Filelist= glob.glob('/UCE_500/*.nexus')
+Filelist= glob.glob('UCE_500/*.nexus')
 print(Filelist)
 #for pathname in Filelist:
 #  InFile= open(pathname, 'rU')
