@@ -33,9 +33,9 @@ from Bio import SeqIO
 WriteOutFile = True
 Filelist= glob.glob('/UCE_500/*.nexus')
 print(Filelist)
-for pathname in Filelist:
-  InFile= open(pathname, 'rU')
-InFile.close
+#for pathname in Filelist:
+#  InFile= open(pathname, 'rU')
+#InFile.close
 
 
 
