@@ -31,11 +31,12 @@ if len(sys.argv)<2:
 
 def process(filename):
   folder = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
+  dirs = os.listdir( path )
   count = SeqIO.convert("filename", "nexus", "filename.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
-for f in os.listdir(folder):
-  process(f)
+for file in dirs:
+  process(file)
 
 
 
