@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+import sys
+import re
+
+
+Usage ="""
+Welcome to another script! It's called nexus_merge.psg
+It reads in two nexus files and combines them into one file and then spits that out. 
+
+Many thanks to the coders at Biopython for their modules. """ 
+
+if len(sys.argv)<2:
+  print Usage
+
+
+from Bio import AlignIO
+alignments = AlignIO.read ("918_oryLat2.nex", "nexus")
+for alignment in alignments:
+  print(alignment)
+  
+#### Next you'll want to read in one of the probe sequences and store that along with the 8 taxa alignment. 
