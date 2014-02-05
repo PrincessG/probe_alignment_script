@@ -2,7 +2,7 @@
 
 import sys
 import re
-import glob
+
 
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
@@ -29,7 +29,7 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 WriteOutFile = True
-Filelist= glob.glob('UCE_500/*.nexus')
+Filelist= glob.glob('/UCE_500/*_oryLat2.nex')
 print ('Filelist')
 #for pathname in Filelist:
 #  InFile= open(pathname, 'rU')
