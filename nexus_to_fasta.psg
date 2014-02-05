@@ -28,9 +28,6 @@ Many thanks to the coders at Biopython for their module. """
 
 if len(sys.argv)<2:
   print Usage
-
-from Bio import SeqIO
-
 WriteOutFile = True
 Filelist= glob.glob('UCE_500/*.nexus')
 print ('Filelist')
