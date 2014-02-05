@@ -30,7 +30,7 @@ if len(sys.argv)<2:
   print Usage
 
 def process(filename)
-  count = SeqIO.convert("filename", "nexus", "filename.PARTIAL.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+  count = SeqIO.convert("filename", "nexus", "filename.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
 for f in os.listdir(folder):
