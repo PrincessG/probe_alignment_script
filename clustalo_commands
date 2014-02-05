@@ -11,7 +11,12 @@
 ### pass the alignment on to clustal o
 ##A typical invocation would be: clustalo -i my-in-seqs.fa -o my-out-seqs.fa -v
 
-clustalo -i 918_probe_test.fa --p1 918.fa -iter=1000 -o 918.DONE.phy --outfmt phylip
-
-
 clustalo -i 918_probe_test.fa --p1 918.fa --maxseqlen=761 --seqtype=DNA --iter=5 --percent-id -o 918.DONE.phy --outfmt phylip
+
+##Trying a different approach. Here I'm aligning one probe at a time to the 8 taxa set alignment
+
+clustalo --p1 918_probe0.fa --p2 918.fa --maxseqlen=761 --seqtype=DNA --iter=5 --percent-id -o 918.PARTIAL.fa --outfmt fasta
+
+## Followed by 
+
+clustalo --p1 918_probe1.fa --p2 918.PARTIAL.fa --maxseqlen=761 --seqtype=DNA --iter=5 --percent-id -o 918.DONE.phy --outfmt phylip
