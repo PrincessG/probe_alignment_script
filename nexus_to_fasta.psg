@@ -30,7 +30,7 @@ if len(sys.argv)<2:
   print Usage
 WriteOutFile = True
 Filelist= glob.glob('/UCE_500/*_oryLat2.nex')
-print ('Filelist')
+print Filelist
 #for pathname in Filelist:
 #  InFile= open(pathname, 'rU')
 #InFile.close
