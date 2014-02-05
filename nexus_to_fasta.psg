@@ -8,3 +8,6 @@ for MyArg in sys.argv:
 
 count = SeqIO.convert("918_oryLat2.nex", "nexus", "918.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
 print("Converted %i records" % count)
+
+count = SeqIO.convert("918_probe0.nexus", "nexus", "918_probe0.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+print("Converted %i records" % count)
