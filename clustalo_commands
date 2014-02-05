@@ -13,4 +13,5 @@
 
 #clustalo -i probe0.fa --profile1 918.fa -o 918.PARTIAL.fa --outfmt phylip
 
+#clustalo -i probe1.fa --profile1 918.fa -o 918.DONE.fa --outfmt phylip
 
