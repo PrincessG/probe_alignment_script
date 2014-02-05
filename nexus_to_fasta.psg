@@ -30,7 +30,7 @@ if len(sys.argv)<2:
   print Usage
 
 count = SeqIO.convert("/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex", "nexus", "*_oryLat2.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
-  print("Converted %i records" % count)
+print("Converted %i records" % count)
 
 
 
