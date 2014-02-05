@@ -29,7 +29,7 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 
-def process(filename)
+def process(filename):
   count = SeqIO.convert("filename", "nexus", "filename.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
