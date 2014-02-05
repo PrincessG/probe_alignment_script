@@ -29,8 +29,8 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 WriteOutFile = True
-Filelist= glob.glob('/UCE_500/*_oryLat2.nex')
-Filelist
+FileList= glob.glob('/UCE_500/*_oryLat2.nex')
+print (FileList)
 #for pathname in Filelist:
 #  InFile= open(pathname, 'rU')
 #InFile.close
