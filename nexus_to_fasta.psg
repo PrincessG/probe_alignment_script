@@ -28,15 +28,13 @@ Many thanks to the coders at Biopython for their module. """
 
 if len(sys.argv)<2:
   print Usage
-WriteOutFile = True
+
 FileList= glob.glob('/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex')
 print (FileList)
 for pathname in FileList:
-  InFile= open(pathname, 'rU')
-  for Line in InFile:
-    count = SeqIO.convert("InFile", "nexus", "pathname.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
-    print("Converted %i records" % count)
-InFile.close
+  count = SeqIO.convert("pathname", "nexus", "pathname.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+  print("Converted %i records" % count)
+
 
 
 
