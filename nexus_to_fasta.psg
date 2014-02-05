@@ -29,7 +29,7 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 WriteOutFile = True
-FileList= glob.iglob('/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex')
+FileList= glob.glob('/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex')
 print (FileList)
 #FileName= "FileList"
 #InFile= open(FileName, 'rU')
