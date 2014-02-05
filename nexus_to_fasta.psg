@@ -1,1 +1,10 @@
 # To convert nexus files to fasta files for clusta omega input.
+import sys
+from Bio import SeqIO
+from Bio.Alphabet import IUPAC
+for MyArg in sys.argv:
+  print MyArg
+
+
+count = SeqIO.convert("918_oryLat2.nex", "nexus", "918.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+print("Converted %i records" % count)
