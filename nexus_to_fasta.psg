@@ -2,7 +2,7 @@
 
 import sys
 import re
-
+import os
 
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
