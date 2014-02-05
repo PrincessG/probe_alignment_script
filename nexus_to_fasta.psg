@@ -11,3 +11,30 @@ print("Converted %i records" % count)
 
 count = SeqIO.convert("918_probe0.nexus", "nexus", "918_probe0.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
 print("Converted %i records" % count)
+
+##### OR to automate across all nexus alignment files...
+
+
+import sys
+import re
+import glob
+
+Usage ="""
+Let's automate this b#$#! 
+
+Many thanks to the coders at Biopython for their module. """ 
+
+if len(sys.argv)<2:
+  print Usage
+
+from Bio import SeqIO
+
+WriteOutFile = True
+Filelist= glob.glob('/UCE_500/*.nexus')
+print(Filelist)
+for pathname in Filelist:
+  InFile= open(pathname, 'rU')
+InFile.close
+
+
+
