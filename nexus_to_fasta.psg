@@ -33,9 +33,9 @@ FileList= glob.glob('/Users/Princess/Documents/Research/Acanthomorpha/Coding/Git
 print (FileList)
 for pathname in FileList:
   InFile= open(pathname, 'rU')
-    for Line in InFile:
-      count = SeqIO.convert("InFile", "nexus", "pathname.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
-      print("Converted %i records" % count)
+  for Line in InFile:
+    count = SeqIO.convert("InFile", "nexus", "pathname.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+    print("Converted %i records" % count)
 InFile.close
 
 
