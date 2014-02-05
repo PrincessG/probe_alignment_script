@@ -2,7 +2,7 @@
 
 import sys
 import re
-import glob
+
 
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
@@ -29,10 +29,7 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 
-FileList= glob.glob('/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex')
-print (FileList)
-for pathname[:] in FileList:
-  count = SeqIO.convert("pathname[:]", "nexus", "pathname[:].fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+count = SeqIO.convert("/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex", "nexus", "*_oryLat2.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
 
