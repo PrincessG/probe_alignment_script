@@ -11,6 +11,6 @@
 ### pass the alignment on to clustal o
 ##A typical invocation would be: clustalo -i my-in-seqs.fa -o my-out-seqs.fa -v
 
-#clustalo -i 
+#clustalo -i probe0.fa --profile1 918.fa -o 918.DONE
 
 
