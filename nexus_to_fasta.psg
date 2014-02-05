@@ -32,7 +32,7 @@ if len(sys.argv)<2:
 FileList= glob.glob('/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500/*_oryLat2.nex')
 print (FileList)
 for pathname in FileList:
-  count = SeqIO.convert("pathname", "nexus", "pathname.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+  count = SeqIO.convert("FileList", "nexus", "pathname.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
 
