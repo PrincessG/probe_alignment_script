@@ -30,8 +30,8 @@ if len(sys.argv)<2:
   print Usage
 
 def process(filename):
-  path = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
-  count = SeqIO.convert("path.nex", "nexus", "path.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
+  files = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
+  count = SeqIO.convert(files, "nexus", "path.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
 for d in sys.argv[1:]:
