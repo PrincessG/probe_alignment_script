@@ -1,4 +1,4 @@
-# To convert nexus files to fasta files for clusta omega input.
+# To convert nexus files to fasta files for clustal omega input.
 
 import sys
 import re
