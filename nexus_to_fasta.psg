@@ -3,6 +3,7 @@
 import sys
 import re
 import os
+import fileinput
 
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
