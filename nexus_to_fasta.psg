@@ -36,7 +36,7 @@ def process(filename):
   print("Converted %i records" % count)
 
 for d in sys.argv[1:]:
-  for f in os.listdir(d):
+  for f in fileinput.input(d):
     process(f)
 
 
