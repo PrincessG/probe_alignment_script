@@ -35,7 +35,7 @@ def process(filename):
   count = SeqIO.convert(files, "nexus", "path.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
-for path, dirs, files in os.walk(PSGPATH):
+for path, dirs, files in os.walk(PSGDirectory):
       print path
       print dirs
       print files
