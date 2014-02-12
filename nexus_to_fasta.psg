@@ -31,12 +31,17 @@ if len(sys.argv)<2:
   print Usage
 
 def process(filename):
-  files = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
+  PSGPATH = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
   count = SeqIO.convert(files, "nexus", "path.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   print("Converted %i records" % count)
 
-for path, dirs, files in os.walk(files):
-      process(filename)
+for path, dirs, files in os.walk(PSGPATH):
+      for filename in files:
+      fullpath = os.path.join(path, filename)
+      with open(fullpath, 'r') as f:
+        process(f)
+      
+      
 
 
 
