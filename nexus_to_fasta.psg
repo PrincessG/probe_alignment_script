@@ -39,7 +39,7 @@ def process(filename):
 for path, dirs, files in os.walk(PSGDirectory):
   for filename in files:
     fullpath = os.path.join(path, files)
-      print fullpath
+    print fullpath
         #print path
         #print dirs
         #print files
