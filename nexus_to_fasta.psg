@@ -46,7 +46,7 @@ walk = os.walk(PSGDirectory)
 for files in walk:
   for filename in files:
     fullpath = os.path.join(path, filename)
-      print fullpath
+    print fullpath
 
 #recursively do the count command on each file in PSGDirectory
 for files in os.walk(PSGDirectory):
