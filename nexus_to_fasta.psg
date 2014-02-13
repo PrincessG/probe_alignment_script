@@ -37,11 +37,12 @@ def process(filename):
   
 
 for path, dirs, files in os.walk(PSGDirectory):
-  for filename in files:
-    print path
-    print dirs
-    print files
 walk = os.walk(PSGDirectory)
+  for files in walk:
+  print path
+  print dirs
+  print files
+
 
 # join "files" from PSGDirectory with the path to PSGDirectory using os.join
 for files in walk:
@@ -50,9 +51,9 @@ for files in walk:
     print fullpath
 
 #recursively do the count command on each file in PSGDirectory
-for files in os.walk(PSGDirectory):
-  print("Converted %i records" % count)
-  process(files)      
+#for files in os.walk(PSGDirectory):
+#  print("Converted %i records" % count)
+#  process(files)      
 
 
 
