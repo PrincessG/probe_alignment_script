@@ -38,7 +38,6 @@ def process(filename):
 
 for path, dirs, files in os.walk(PSGDirectory):
 walk = os.walk(PSGDirectory)
-  for files in walk:
   print path
   print dirs
   print files
