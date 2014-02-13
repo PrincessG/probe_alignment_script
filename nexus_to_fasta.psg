@@ -38,18 +38,16 @@ def process(filename):
 
 for path, dirs, files in os.walk(PSGDirectory):
   for filename in files:
-    fullpath = os.path.join(path, files)
-    print fullpath
-        #print path
-        #print dirs
-        #print files
-#walk = os.walk(PSGDirectory)
+    print path
+    print dirs
+    print files
+walk = os.walk(PSGDirectory)
 
 # join "files" from PSGDirectory with the path to PSGDirectory using os.join
-#for files in walk:
-#  for filename in files:
-#    fullpath = os.path.join(path, files)
-#    print fullpath
+for files in walk:
+  for filename in files:
+    fullpath = os.path.join(path, files)
+    print fullpath
 
 #recursively do the count command on each file in PSGDirectory
 for files in os.walk(PSGDirectory):
