@@ -37,13 +37,13 @@ def process(filename):
   
 
 for path, dirs, files in os.walk(PSGDirectory):
-walk = os.walk(PSGDirectory)
   print path
   print dirs
   print files
 
 
 # join "files" from PSGDirectory with the path to PSGDirectory using os.join
+walk = os.walk(PSGDirectory)
 for files in walk:
   for filename in files:
     fullpath = os.path.join(path, files)
