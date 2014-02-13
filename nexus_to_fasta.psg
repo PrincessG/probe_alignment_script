@@ -43,10 +43,10 @@ for path, dirs, files in os.walk(PSGDirectory):
 walk = os.walk(PSGDirectory)
 
 # join "files" from PSGDirectory with the path to PSGDirectory using os.join
-  for files in walk:
-    for filename in files:
-      fullpath = os.path.join(path, filename)
-        print fullpath
+for files in walk:
+  for filename in files:
+    fullpath = os.path.join(path, filename)
+      print fullpath
 
 #recursively do the count command on each file in PSGDirectory
 for files in os.walk(PSGDirectory):
