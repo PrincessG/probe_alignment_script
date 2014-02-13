@@ -32,27 +32,11 @@ if len(sys.argv)<2:
 PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
 
 def process(filename):
+  return SeqIO.convert("files", "nexus", "files.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
   
-  count = SeqIO.convert("files", "nexus", "files.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
-  
 
-for path, dirs, files in os.walk(PSGDirectory):
-  print path
-  print dirs
-  print files
-
-
-# join "files" from PSGDirectory with the path to PSGDirectory using os.join
-walk = os.walk(PSGDirectory)
-for files in walk:
+for root, dirs, files in os.walk(PSGDirectory):
   for filename in files:
-    fullpath = os.path.join(path, files)
-    print fullpath
-
-#recursively do the count command on each file in PSGDirectory
-#for files in os.walk(PSGDirectory):
-#  print("Converted %i records" % count)
-#  process(files)      
-
-
-
+      fullpath = os.path.join(root,filename)
+      print process (fullpath)
+  
