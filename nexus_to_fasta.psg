@@ -30,6 +30,7 @@ Many thanks to the coders at Biopython for their module. """
 if len(sys.argv)<2:
   print Usage
 PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
+
 def process(filename):
   
   count = SeqIO.convert("files", "nexus", "files.fa", "fasta", alphabet= IUPAC.ambiguous_dna)
@@ -39,6 +40,12 @@ for path, dirs, files in os.walk(PSGDirectory):
       print path
       print dirs
       print files
+
+# join "files" from PSGDirectory with the path to PSGDirectory using os.join
+  for files in walk:
+    for filename in files:
+      fullpath = os.path.join(path, filename)
+        print fullpath
 
 #recursively do the count command on each file in PSGDirectory
 for files in os.walk(PSGDirectory):
