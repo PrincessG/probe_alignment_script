@@ -32,7 +32,7 @@ if len(sys.argv)<2:
 PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
 
 def process(filename):
-  return seqIO.convert(filename, "nexus", filename +'.fa', "fasta", alphabet= IUPAC.ambiguous_dna)
+  return SeqIO.convert(filename, "nexus", filename +'.fa', "fasta", alphabet= IUPAC.ambiguous_dna)
   
 
 for root, dirs, files in os.walk(PSGDirectory):
