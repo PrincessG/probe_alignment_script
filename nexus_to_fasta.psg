@@ -40,6 +40,7 @@ for path, dirs, files in os.walk(PSGDirectory):
       print path
       print dirs
       print files
+walk = os.walk(PSGDirectory)
 
 # join "files" from PSGDirectory with the path to PSGDirectory using os.join
   for files in walk:
