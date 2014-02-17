@@ -20,3 +20,7 @@ clustalo --p1 918_probe0.fa --p2 918.fa --maxseqlen=761 --seqtype=DNA --iter=5 -
 ## Followed by 
 
 clustalo --p1 918_probe1.fa --p2 918.PARTIAL.fa --maxseqlen=761 --seqtype=DNA --iter=5 --percent-id -o 918.DONE.phy --outfmt phylip
+
+
+## To automate this, write a python code (hopefully using biopython) that will read through each probe0 in the directory
+## and match it with the corresponding fasta alignment file. 
