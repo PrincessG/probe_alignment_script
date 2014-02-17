@@ -1,8 +1,12 @@
-##
 
+#!/usr/bin/env python
+# encoding: utf-8
+
+import sys
+import re
 import os
 from Bio.Align.Applications import ClustaloCommandline
-clustalo_exe = r"PATH TO CLUSTAL'
-clustalo_cline = ClustaloCommandline(clustalo_exe, infile= "infilename"
-assert os.path.isfile(clustalo_exe), "Clustal executable missing"
-stdout, stderr = clustalw_cline()
+clustalo_exe = r"/usr/local/bin/clustalo'
+#clustalo_cline = ClustaloCommandline(clustalo_exe, infile= "infilename"
+#assert os.path.isfile(clustalo_exe), "Clustal executable missing"
+#stdout, stderr = clustalw_cline()
