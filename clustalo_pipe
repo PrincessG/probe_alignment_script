@@ -4,8 +4,14 @@
 import sys
 import re
 import os
-from Bio.Align.Applications import ClustaloCommandline
-clustalo_exe = r"/usr/local/bin/clustalo"
+
+p = re.complile('
+p
+
+
+###This stuff doesn't work for clustalo :0( 
+#from Bio.Align.Applications import ClustaloCommandline
+#clustalo_exe = r"/usr/local/bin/clustalo"
 #clustalo_cline = ClustaloCommandline(clustalo_exe, infile= "infilename"
 #assert os.path.isfile(clustalo_exe), "Clustal executable missing"
 #stdout, stderr = clustalw_cline()
