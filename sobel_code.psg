@@ -10,11 +10,11 @@ do
 	file2A=`ls "$prefix"_*nex.fa`
 	file3A="$file2A.partial.fa"
 	file1B=`ls "$prefix"_*probe_1*`
-	file3B="$file2A.done.phy"
+	file3B="$file2A.done.fa"
 
 	clustalo --p1 "$file1A" --p2 "$file2A" --maxseqlen=$char_len --seqtype=DNA --iter=100 --percent-id -o "$file3A" --outfmt fasta
 
-	clustalo --p1 "$file1B" --p2 "$file3A" --maxseqlen=$char_len --seqtype=DNA --iter=100 --percent-id -o "$file3B" --outfmt phylip
+	clustalo --p1 "$file1B" --p2 "$file3A" --maxseqlen=$char_len --seqtype=DNA --iter=100 --percent-id -o "$file3B" --outfmt fasta
 
 done < length.txt
 
