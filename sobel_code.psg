@@ -19,5 +19,5 @@ do
 done < length.txt
 
 
-#To run this file just type the following into terminal without the hashtag
+#To run this file just type the following into terminal without the hashtag. Don't forget to chmod u+x it! 
 #time ./sobel_code.psg
