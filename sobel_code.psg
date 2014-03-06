@@ -20,4 +20,4 @@ done < length.txt
 
 
 #To run this file just type the following into terminal without the hashtag
-#time ./script.csh 
+#time ./sobel_code.psg
