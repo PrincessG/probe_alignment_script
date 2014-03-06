@@ -10,4 +10,26 @@ for MyArg in sys.argv:
 #print("Converted %i records" % count)
 
 
-## OR to run the script across an entire directory. Run the following
+
+##### OR to automate across all nexus alignment files...type python nexus_to_fasta.psg foldernametoprocess
+
+
+
+Usage ="""
+Let's automate this b#$#! 
+
+Many thanks to the coders at Biopython for their module and ____ at Stackoverflow. """ 
+
+if len(sys.argv)<2:
+  print Usage
+PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
+
+def process(filename):
+  return SeqIO.convert(filename, "fasta", filename +'.nex', "nexus", alphabet= IUPAC.ambiguous_dna)
+  
+
+for root, dirs, files in os.walk(PSGDirectory):
+  for filename in files:
+      fullpath = os.path.join(root, filename)
+      print process (fullpath)
+ 
