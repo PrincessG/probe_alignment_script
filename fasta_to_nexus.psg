@@ -11,7 +11,7 @@ for MyArg in sys.argv:
 
 
 
-##### OR to automate across all nexus alignment files...type python nexus_to_fasta.psg foldernametoprocess
+##### OR to automate across all nexus alignment files...type python fasta_to_nexus.psg foldernametoprocess
 
 
 
