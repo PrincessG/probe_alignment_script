@@ -1,5 +1,6 @@
 ##Convert the probe fasta files to nexus files. 
 import sys
+import re
 import os
 import fileinput
 
@@ -26,7 +27,7 @@ Many thanks to the coders at Biopython for their module and ____ at Stackoverflo
 
 if len(sys.argv)<4:
   print Usage
-PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/Files_To_Align"
+PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/DoneFilesToConvert"
 
 def process(filename):
   return SeqIO.convert(filename, "fasta", filename +'.nex', "nexus", alphabet= IUPAC.ambiguous_dna)
