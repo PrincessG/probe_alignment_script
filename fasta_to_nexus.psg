@@ -1,5 +1,6 @@
 ##Convert the probe fasta files to nexus files. 
 import sys
+import os
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
 for MyArg in sys.argv:
