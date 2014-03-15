@@ -23,7 +23,7 @@ for MyArg in sys.argv:
 Usage ="""
 Let's automate this b#$#! 
 
-Many thanks to the coders at Biopython for their module and ____ at Stackoverflow. """ 
+Many thanks to the coders at Biopython for their module and celeritas at Stackoverflow. """ 
 
 if len(sys.argv)<4:
   print Usage
