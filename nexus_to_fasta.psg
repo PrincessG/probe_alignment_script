@@ -27,9 +27,9 @@ Let's automate this b#$#!
 
 Many thanks to the coders at Biopython for their module. """ 
 
-if len(sys.argv)<2:
+if len(sys.argv)<50000:
   print Usage
-PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/UCE_500"
+PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/DoneFilesToConvert"
 
 def process(filename):
   return SeqIO.convert(filename, "nexus", filename +'.fa', "fasta", alphabet= IUPAC.ambiguous_dna)
