@@ -27,7 +27,7 @@ Many thanks to the coders at Biopython for their module and celeritas at Stackov
 
 if len(sys.argv)<4:
   print Usage
-PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/DoneFilesToConvert/*.fa"
+PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/DoneFilesToConvert/*.done.fa"
 
 def process(filename):
   return SeqIO.convert(filename, "fasta", filename +'.nex', "nexus", alphabet= IUPAC.ambiguous_dna)
