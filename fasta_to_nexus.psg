@@ -32,7 +32,6 @@ PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/p
 def process(filename):
   return SeqIO.convert(filename, "fasta", filename +'.nex', "nexus", alphabet= IUPAC.ambiguous_dna)
   
-
 for root, dirs, files in os.walk(PSGDirectory):
   for filename in files:
       fullpath = os.path.join(root, filename)
