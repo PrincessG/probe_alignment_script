@@ -36,4 +36,5 @@ for root, dirs, files in os.walk(PSGDirectory):
   for filename in files:
       fullpath = os.path.join(root, filename)
       print process (fullpath)
+      process (fullpath)
  
