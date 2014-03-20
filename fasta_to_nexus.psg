@@ -29,10 +29,10 @@ PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/p
 
 if len(sys.argv)<5000:
     #print Usage
-for path, dirs, files in os.walk(PSGDirectory):
-  print path
-  print dirs
-  print files
+  for path, dirs, files in os.walk(PSGDirectory):
+    print path
+    print dirs
+    print files
 
 def process(filename):
   return SeqIO.convert(filename, "fasta", filename +'.nex', "nexus", alphabet= IUPAC.ambiguous_dna)
