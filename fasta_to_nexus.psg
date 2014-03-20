@@ -40,4 +40,4 @@ if len(sys.argv)<5000:
   for root, dirs, files in os.walk(PSGDirectory):
     for filename in files:
       fullpath = os.path.join(root, filename)
-        print process(fullpath)
+      print process(fullpath)
