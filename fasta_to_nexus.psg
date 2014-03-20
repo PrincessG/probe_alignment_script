@@ -26,7 +26,7 @@ Let's automate this b#$#!
 Many thanks to the coders at Biopython for their module and celeritas at Stackoverflow. """ 
 
 if len(sys.argv)<4:
-  
+    #print Usage
 PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/DoneFilesToConvert/*.done.fa"
 
 def process(filename):
