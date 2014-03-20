@@ -25,7 +25,7 @@ Let's automate this b#$#!
 
 Many thanks to the coders at Biopython for their module and celeritas at Stackoverflow. """ 
 
-PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/DoneFilesToConvert"
+PSGDirectory = "/Users/Princess/Documents/Research/Acanthomorpha/Coding/Github/probe_alignment_script/DoneFilesToConvert_v2"
 
 if len(sys.argv)<5000:
     #print Usage
