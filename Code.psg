@@ -7,7 +7,7 @@ import re
 
 Usage ="""
 Welcome to Code.psg !
-It reads in a fasta file and spits out a text file for each fasta entry. 
+It reads in a fasta file with many entries and spits out a text file for each individual fasta entry. 
 
 Many thanks to the coders at Biopython for their module. """ 
 
