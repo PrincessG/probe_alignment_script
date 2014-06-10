@@ -1,3 +1,4 @@
+######################### Hello! Here is a script to automate my clustal omega commands across the files within a directory
 #!/bin/sh
 while read line
 do
