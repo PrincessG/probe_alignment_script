@@ -1,4 +1,4 @@
-######## Script for Creating a text file with start and stop positions for each UCE Core (MagicList.txt) #########
+######## R Script for Creating a text file with start and stop positions for each UCE Core (MagicList.txt) #########
 #Load required packages
 library(ape)
 
