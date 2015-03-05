@@ -32,3 +32,5 @@ The next step is add a for loop to the above script that will actually spit out 
 >OutFile.close() # put this line outside the loop
 
 Ideally I want to the file names to get passed from the original first part of fasta listings. ###_oryLat2_chr##_######_#######|probe_0 OR ###_oryLat2_chr##_######_#######|probe_1. 
+
+This readme file is still being updated. But the coodes in this repository should still work. 
