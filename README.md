@@ -4,7 +4,7 @@ This is the readme file to run the probe-alignment_script. Just enter terminal a
 
 >python location/of/probe_alignment_script
 
-To pull down the initial version of the script. From within terminal navigate to the coding directory withing the research folder. Then type
+To pull down the initial version of the script. From within terminal navigate to the coding directory within the research folder. Then type
 
 >git clone http://github.com/PrincessG/probe_alignment_script.git
 
